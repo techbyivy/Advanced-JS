@@ -4,17 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Store</title>
-    <link rel="stylesheet" href="/Mini-store/style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <div class="container">
+    <header class="header">
         <h1>My Store</h1>
-        <div class="products-container">
-          <ul id="list">
-            
-          </ul>  
-        </div>
-    </div>
-    <script src="/Mini-store/script.js"></script>
+        <p>Everything you need, one click away</p>
+    </header>
+
+    <main class="container">
+        <section class="filters">
+            <input type="number" id="price_filter" placeholder="Max price (KES)">
+            <label class="check">
+                <input type="checkbox" id="stock_filter"> In stock only
+            </label>
+            <button id="filterBtn">Filter</button>
+            <button id="resetBtn" class="secondary">Reset</button>
+        </section>
+
+        <section class="products-container">
+            <ul id="list"></ul>
+        </section>
+
+        <section id="details" class="details hidden"></section>
+    </main>
+
+    <script src="/script.js"></script>
 </body>
 </html>
