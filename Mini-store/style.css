@@ -85,7 +85,6 @@ button.secondary:hover {
     background: #d4d4d8;
 }
 
-/* ---------- product grid ---------- */
 #list {
     list-style: none;
     display: grid;
