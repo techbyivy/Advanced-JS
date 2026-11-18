@@ -16,7 +16,7 @@ const products = [
     { id: 5, name: "Calculator", price: 1200, stock: 3, productImg:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNV6wpYPKsdc11lUyDgB4nuEgQaYfVF85mw-2LxEYAhc-qudptuu9GXPxD&s=10" },
 ];
 
-// Draw a list of products as cards
+//list of products as cards
 function renderProducts(items) {
     list.innerHTML = "";
 
@@ -49,7 +49,7 @@ function renderProducts(items) {
     });
 }
 
-// Combine the price and stock filters
+// price and stock filters combined
 function applyFilters() {
     let result = products;
 
